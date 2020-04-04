@@ -1,9 +1,31 @@
 /* Entire document */
 
-/* header */
-header>nav>ul>li{
-    background-color: pink
+body {
+    margin: 0px auto;
+    width: 960px;
+    background-color: rgb(159, 140, 222);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    color: black;
 }
+/* header */
+header{
+    height: 250px;
+}
+
+header>h1{
+    margin: 10px;
+    text-align: center;
+    color: purple
+}
+
+ header>nav>ul>li{
+     display: inline-block;
+     width: 100px;
+     border-radius: 25px;
+     background-color: rgb(102,255,154);
+     margin: 5px;
+     border: 1px solid black;
+ }
 /* main */
 
 /* footer */
