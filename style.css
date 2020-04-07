@@ -11,12 +11,6 @@ body {
 header{
     height: 250px;
 }
-header>img {
-    width: 150px;
-    margin: 10px;
-    margin-left: 100px;
-    float: left;
-}
 
 header>h1{
     margin: 10px;
@@ -27,6 +21,7 @@ header>h1{
 header>nav {
     float: right;
     margin-top: 100px;
+    margin-left: 100 px;
 }
 
  header>nav>ul>li{
@@ -38,6 +33,19 @@ header>nav {
      text-align: center;
      border: 1px solid black;
  }
+
+ header>h2{
+    margin: 10px;
+    text-align: left; 
+    color: purple
+ }
 /* main */
+
+main>section{
+    border: 3px solid black;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background: pink
+    }
 
 /* footer */
