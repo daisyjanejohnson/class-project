@@ -45,7 +45,12 @@ main>section{
     border: 3px solid black;
     margin-bottom: 5px;
     border-radius: 15px;
-    background: pink
+    background: pink;
+    float: right;
     }
 
 /* footer */
+
+footer{
+    float: bottom;
+}

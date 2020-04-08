@@ -27,23 +27,41 @@ function addGreeting() {
 
 // // Ask Preference
 
-function askPreference() {
-  var response = prompt('Do you prefer cats, dogs or both?')
-  var message;
-  if (response === 'cats') {
-    message = 'Cats are purrfect!'
-  } else if (response === 'dogs') {
-    message = 'I love dogs too!'
-  } else if (response === 'both') {
-    message = 'I agree, they both are great!'
-  } else { message = 'Animals are awesome!' }
+function getItemType() {
+  var response = prompt('Do you want to adopt a cat or dog?')
+  var item;
+  if (response === 'cat') {
+    // message = 'I can\'t blame you, cats are purrfect!'
+    item = '<img src="images/catt.png">';
+  } else if (response === 'dog') {
+    // message = 'Everyone knows a dog is a person\'s best friend!'
+    item = '<img src="images/doggg.png">';
+  // } else if (response === 'both') {
+  //   // message = 'Wow, you are the best!'
+  //   item = '<img src="images/dog-and-cat.jpeg'
+  } else { message = 'I know you want to adopt someone today, just look around!' }
 
-  return document.write('<h3>' + message + '<h3>')
+  return item;
 }
 
-function iceCream(iceCreamFlavor, sauce, topping){
-var message = 'I like ' + iceCreamFlavor + ' ice cream with ' + sauce + ' and ' + topping + ' on top!'
-
-return message
+function howMany(){
+  var count = prompt('Great, how many would you like?');
+  
+  while(isNaN(count) || count === ''){
+    count = prompt('PLEASE ENTER A NUMBER! How many would you like?')
+  }
+  return count;
 }
+
+function showOrder(){
+  var result = '';
+  var itemType = getItemType();
+  var orderTotal = howMany();
+  for (var i = 0; i < orderTotal; i++){
+    result = result + '<p>' + itemType + '</p>';
+  }
+  return document.write(result); 
+}
+
+
 
